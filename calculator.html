@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calc.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div id="calculator">
+        <div id="mcontainers">
+            <h3>Calculator</h3>
+            <div class="containers" id="header">
+                <input type="text" id="display" class="input1" readonly>
+                <input type="text" id="output" value="C" onclick="
+                navdisplay='';
+                document.querySelector('#display').value=navdisplay;" readonly>
+            </div>
+            <div class="belowcontainer">
+                <div class="containers">
+                    <input type="button" value="7" onclick="
+          navdisplay=navdisplay+7;
+          document.querySelector('#display').value=navdisplay;" class="number">
+                    <input type="button" value="8" onclick="
+          navdisplay=navdisplay+8;
+          document.querySelector('#display').value=navdisplay;" class="number">
+                    <input type="button" value="9" onclick="
+          navdisplay=navdisplay+9;
+          document.querySelector('#display').value=navdisplay;" class="number">
+                    <input type="button" value="x" onclick="
+          navdisplay=navdisplay+'*';
+          document.querySelector('#display').value=navdisplay;" class="operators">
+                </div>
+                <div class="containers">
+                    <input type="button" value="4" onclick="
+          navdisplay=navdisplay+4;
+          document.querySelector('#display').value=navdisplay;" class="number">
+                    <input type="button" value="5" onclick="
+          navdisplay=navdisplay+5;
+          document.querySelector('#display').value=navdisplay;" class="number">
+                    <input type="button" value="6" onclick="
+          navdisplay=navdisplay+6;
+          document.querySelector('#display').value=navdisplay;" class="number">
+                    <input type="button" value="-" onclick="
+          navdisplay=navdisplay+'-';
+          document.querySelector('#display').value=navdisplay;" class="operators">
+                </div>
+                <div class="containers">
+                    <input type="button" value="1" onclick="
+          navdisplay=navdisplay+1;
+          document.querySelector('#display').value=navdisplay;" class="number">
+                    <input type="button" value="2" onclick="
+          navdisplay=navdisplay+2;
+          document.querySelector('#display').value=navdisplay;" class="number">
+                    <input type="button" value="3" onclick="
+          navdisplay=navdisplay+3;
+          document.querySelector('#display').value=navdisplay;" class="number">
+                    <input type="button" value="+" onclick="
+          navdisplay=navdisplay+'+';
+          document.querySelector('#display').value=navdisplay;" class="operators">
+                </div>
+                <div class="containers">
+                    <input type="button" value="%" onclick="
+          navdisplay=navdisplay+'%';
+          document.querySelector('#display').value=navdisplay;" class="operators">
+                    <input type="button" value="0" onclick="
+          navdisplay=navdisplay+0;
+          document.querySelector('#display').value=navdisplay;" class="number">
+                    <input type="button" value="/" onclick="
+          navdisplay=navdisplay+'/';
+          document.querySelector('#display').value=navdisplay;" class="operators">
+                    <input type="button" value="=" onclick="
+          navdisplay=eval(navdisplay);
+          document.querySelector('#display').value=navdisplay;" style="background-color: #6366f1;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var navdisplay = '';
+        document.querySelector('#display').value = navdisplay;
+    </script>
+</body>
+
+</html>
